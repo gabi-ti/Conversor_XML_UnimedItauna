@@ -1,0 +1,30 @@
+from app.core.namespaces import NS
+
+
+def localizar_procedimentos(root):
+
+    procedimentos = root.xpath(
+        "//ans:procedimento",
+        namespaces=NS
+    )
+
+    print(f"\nProcedimentos encontrados: {len(procedimentos)}\n")
+
+    for procedimento in procedimentos:
+
+        codigo_tabela = procedimento.find(
+            "ans:codigoTabela",
+            namespaces=NS
+        )
+
+        codigo_procedimento = procedimento.find(
+            "ans:codigoProcedimento",
+            namespaces=NS
+        )
+
+        if codigo_tabela is not None and codigo_procedimento is not None:
+
+            print(
+                f"Tabela: {codigo_tabela.text} | "
+                f"Procedimento: {codigo_procedimento.text}"
+            )
