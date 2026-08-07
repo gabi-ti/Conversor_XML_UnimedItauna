@@ -1,0 +1,27 @@
+# Ambiente virtual
+.venv/
+
+# PyInstaller
+build/
+dist/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+
+# XMLs de entrada e saída
+entrada/
+saida/
+
+# Arquivos temporários do Excel
+~$*.xlsx
+
+# Arquivos compactados
+*.zip
+
+# VS Code
+.vscode/
