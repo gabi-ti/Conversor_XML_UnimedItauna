@@ -52,7 +52,7 @@ def prestador(root):
             alteracoes = {
                 "codigoPrestadorNaOperadora": "17098",
                 "nomeProf": "MARINA MOREIRA GONTIJO",
-                "conselho": "6",
+                "conselho": "06",
                 "numeroConselhoProfissional": "17098",
                 "CBO": "225124",
             }
